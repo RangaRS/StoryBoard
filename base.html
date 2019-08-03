@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>$titleName</title>
+    <script src="http://dcdemo:6060/DCUIRepo/mdm/script/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script src="review.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://dcdemo:6060/DCUIRepo/mdm/script/style.css">
+    <script>
+        $fadeScript
+    </script>
+    <style>
+          #clickitem{
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+          }
+
+          #UIcontainer:active #clickitem {
+              background: #3330 !important;
+            }
+
+    </style>
+</head>
+
+<body id="uiBody" class="$deviceType" cz-shortcut-listen="true">
+<input type="hidden" id="pageName" value="$titleName $thisFile" >
+<div id="UIcontainer"> <a id="clickitem" href="$nextFile.html"></a> <img  src="images/$thisFile.png" alt=""/></div>
+</body>
+</html>

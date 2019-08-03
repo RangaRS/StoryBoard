@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+        <script src="review.js"></script>
+        <style>
+            div.editable {
+                width: 300px;
+                height: 200px;
+                border: 1px solid #ccc;
+                padding: 5px;
+            }
+			#setup{
+				    width: 93%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px 40px 30px 40px;
+    position: absolute;
+    margin: 10px;
+			}
+			body {
+   
+    font-family: arial;
+}
+			input[type='text'] {
+    border: 1px solid #ddd;
+    width: 260px;
+    height: 33px;
+				padding: 0px 10px;
+    font-size: 13px;
+				margin-left: 60px;
+    margin-top: 10px;
+  
+}
+			#page_wise{
+    font-weight: bold;}
+			#comments{font-weight: normal; padding: 0em 2em 0em 2em !important;}
+            #comments_box {
+                    width: 90%;
+    min-height: 100px;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    margin-left: 107px;
+    padding: 15px;
+            }
+            strong {
+            font-weight: bold;
+            }
+			input[type='submit'] {
+    width: 140px;
+    padding: 9px 0px;
+				margin-left: 107px;
+    font-weight: normal;
+    margin-top: 4px;
+    background: #3289c7;
+    color: #fff;
+    border: 0px;
+    font-size: 13px;
+    text-align: center;
+    
+}
+form {
+    margin-block-end: 0;
+	font-size: 14px;
+	margin-top: 41px;
+}
+			.form-heading{     font-family: lato;
+    background: #eee;
+    padding: 13px 1px 17px 30px;
+    margin: -15px -40px;
+   
+    font-weight: 600;}
+        </style>
+    </head>
+    <body>
+        <div id="setup" class="">
+			<div class='form-heading'>Verify your comments and send</div><br>
+            <form name="end" id="end" method="post">
+                Name  : <input type="text" name="name" id="name"><br /><br />
+                Email : <input type="text" name="email" id="email"><br /><br /><br />
+                Comments : <div contenteditable="true"   id="comments_box"></div>
+                <input type="submit" value="Send Feedback">
+            </form>
+			
+			<input type="hidden" id="DoNotShowComment" value="true">
+
+        </div>
+    </body>
+</html>
